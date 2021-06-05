@@ -1,0 +1,42 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+//Solved within 20 mins.
+//Thanks.
+//author KRH HIMANSHU SHAW 
+
+class GFG {
+	public static void main (String[] args) {
+		//code
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t-->0){
+		    int n=sc.nextInt();
+		    int rotateBy=sc.nextInt();
+		    int arr[]=new int[n];
+		    for(int i=0;i<n;i++){
+		        arr[i]=sc.nextInt();
+		    }
+		    
+		    int temp[]=new int[rotateBy];
+		    for(int i=0;i<rotateBy;i++){
+		        temp[i]=arr[i];
+		    }
+		    
+		    for(int i=rotateBy-1;i<n-1;i++){
+		        arr[i]=arr[i+1];
+		      System.out.print(arr[i]+" ");
+		    }
+		     for(int sp:temp){
+		         System.out.print(sp+" ");
+		     }
+		     System.out.println();
+		    
+		  //  for(int d:arr){
+		      //  System.out.println(d);
+		    //}
+		    
+		}
+	}
+}
